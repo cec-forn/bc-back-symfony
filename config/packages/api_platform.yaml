@@ -1,0 +1,17 @@
+api_platform:
+  title: Hello API Platform
+  version: 1.0.0
+  # Good defaults for REST APIs
+  defaults:
+    stateless: true
+    cache_headers:
+      vary: ["Content-Type", "Authorization", "Origin"]
+    extra_properties:
+      standard_put: true
+    formats:
+      json: ["application/json"]
+      xml: ["application/xml", "text/xml"]
+      yaml: ["application/x-yaml"]
+      csv: ["text/csv"]
+      html: ["text/html"]
+      myformat: ["application/vnd.myformat"]
